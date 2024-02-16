@@ -35,7 +35,7 @@ public class Crud_Projeto_Main {
 
         private static void displayMenu() {
             System.out.println("\n--- ToDo List App ---");
-            System.out.println("1. Adicionar Tarefa");
+            System.out.println("1. Adicionar Produto");
             System.out.println("2. Remover Tarefa");
             System.out.println("3. Exibir Tarefas");
             System.out.println("4. Sair");
@@ -48,9 +48,12 @@ public class Crud_Projeto_Main {
 
         private static void addTask() {
             scanner.nextLine(); // Limpar o buffer do scanner
-            System.out.print("Digite a tarefa a ser adicionada: ");
+            System.out.print("Digite o produto a ser adicionada: ");
             String task = scanner.nextLine();
             tasks.add(task);
+            System.out.print("Digite a quantidade a ser adicionada: ");
+            String taskquantity = scanner.nextLine();
+            tasks.add(taskquantity);
             System.out.println("Tarefa adicionada com sucesso!");
         }
 
